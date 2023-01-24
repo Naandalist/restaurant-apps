@@ -1,17 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Restaurant Apps Starter Project</title>
-</head>
-<body>
-  <h1>Restaurant Apps Starter Project</h1>
-  <p>Hallo coders! Anda berhasil menjalankan starter project.</p>
-  <p>Jangan lupa untuk menggunakan salah satu gambar yang berada pada ./images/heros sebagai background hero elemen</p>
-  <img src="./images/heros/hero-image_1.jpg" width="450" alt="">
-  <img src="./images/heros/hero-image_2.jpg" width="450" alt="">
-  <img src="./images/heros/hero-image_3.jpg" width="450" alt="">
-  <img src="./images/heros/hero-image_4.jpg" width="450" alt="">
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hunger Web App</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap"
+      rel="stylesheet">
+  </head>
+  <body>
+    <a href="#content" class="skip-link">Skip to content?</a>
+    <!-- Mobile Navbar -->
+    <div class="menu-mob">
+      <div class="icon-menu" id="menu"><a href="#">&#9776;</a></div>
+      <div class="brand-mob">Hunger Web App</div>
+      <div class="brand-mob">&nbsp;</div>
+    </div>
+    <nav id="drawer" class="navmob">
+      <ul class="nav-list-mob">
+        <li class="nav-items-mob"><a href="">Home</a></li>
+        <li class="nav-items-mob"><a href="#">Favorite</a></li>
+        <li class="nav-items-mob"><a target="_blank"
+            href="https://naandalist.com/">About Us</a></li>
+      </ul>
+    </nav>
+    <!-- Desktop Navbar -->
+    <nav class="nav">
+      <a class="brand" href="">Hunger Web App</a>
+      <ul class="nav-list">
+        <li class="nav-items"><a href="">Home</a></li>
+        <li class="nav-items"><a href="#">Favorite</a></li>
+        <li class="nav-items"><a target="_blank" href="https://naandalist.com/">About
+            Us</a></li>
+      </ul>
+    </nav>
+    <!-- Jumbotron -->
+    <div class="hero" style="background-image: linear-gradient(rgba(0, 0, 5,
+      .5), rgba(0, 0, 5, .5)), url('images/heros/hero-image_1.jpg');">
+      <div class="hero-inner">
+        <h1 class="hero-title">Hunger Web App</h1>
+        <p class="hero-subtitle">Find the best restaurants only on the best
+          websites.</p>
+      </div>
+    </div>
+    <!-- Content -->
+    <main id="content" tabindex="0">
+      <section class="content">
+        <div class="content-list">
+          <h1>Available Restaurants</h1>
+          <div class="list" id="content-resto">
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer>
+      <p>Copyright © 2022 - Dicoding</p>
+    </footer>
+  </body>
 </html>
